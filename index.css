@@ -1,0 +1,38 @@
+.main {
+  margin: 0;
+  padding: 60px;
+  height: 100vh;
+  background-color: rgb(34, 34, 34);
+}
+
+.main li {
+  padding-left: 60px;
+  color: #f5f5f5;
+  font-size: 2em;
+}
+
+.main a,.nav a {
+  color: #a2a2a2;
+  text-decoration: none;
+}
+
+.main ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 3em;
+  color: #a2a2a2;
+  margin: 0;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}

@@ -1,0 +1,47 @@
+/* Other CSS */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: #eeeeee;
+}
+
+.content {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, auto);
+}
+
+.card {
+  background: white;
+  padding: 0.2em;
+  width: 60%;
+}
+
+h1,
+p {
+  margin: 0;
+}
+h1 {
+  font-size: 1.4em;
+}
+p {
+  font-size: 0.8em;
+}
+
+/* Overwrite CSS */
+
+/* WHITESPACE */
+.secondary {
+  padding: 1.5em; /*inside of element. using em unit because it's flexible and can scale everything em by changing font size in body. Default size is 16px*/
+}
+
+.secondary h1 {
+  margin-bottom: 0.5em;
+}
+
+.secondary p {
+  line-height: 1.5em;
+}
