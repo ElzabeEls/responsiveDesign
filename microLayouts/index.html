@@ -18,18 +18,111 @@
   </head>
   <body>
     <div class="nav">
-      <p class="heading">MICRO LAYOUTS</p>
+      <p class="heading">
+        <a
+          href="https://web.dev/learn/design/micro-layouts?continue=https%3A%2F%2Fweb.dev%2Flearn%2Fdesign%23article-https%3A%2F%2Fweb.dev%2Flearn%2Fdesign%2Fmicro-layouts"
+          >MICRO LAYOUTS</a
+        >
+      </p>
       <a href="../"> ⬅️ Back</a>
     </div>
-    <header></header>
-    <div class="container">
-      <main>
-        <h1>Know your code</h1>
-        <p>Use our service to ensure that your coding is the best it can be.</p>
-
-        <a href="#">Start coding</a>
-      </main>
+    <div>
+      <h1>Grid</h1>
+      <p>
+        In this example, the ::before and ::after pseudo-elements create
+        decorative lines on either side of a heading. The heading itself is a
+        grid container. The individual elements are laid out so that the lines
+        always fill the available space.
+      </p>
+      <h2>
+        <a href="https://developer.chrome.com/docs/devtools/css/grid/"
+          >How to inspect grid layouts in Chrome DevTools</a
+        >
+      </h2>
+      <div class="example1">
+        <h1>Heading</h1>
+      </div>
     </div>
-    <footer></footer>
+    <div>
+      <h1>Flexbox</h1>
+      <h2>
+        <a href="https://developer.chrome.com/docs/devtools/css/flexbox/"
+          >How to inspect flexbox layouts in Chrome DevTools</a
+        >
+      </h2>
+      <div class="example2">
+        <div class="media">
+          <div class="media-illustration">
+            <svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="100" r="100" fill="#5f6368" />
+            </svg>
+          </div>
+          <div class="media-content">
+            <h3>Media Object</h3>
+            <p>
+              This is a media object. There’s an image and also some content.
+            </p>
+            <p>
+              In this case, the content is a heading followed by two paragraphs
+              of text.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h1>Container Queries</h1>
+      <h2>
+        There's an upcoming CSS technology that reports the dimensions of any
+        parent container: container queries. Container queries allow you to
+        style components in an independent way. The width of the viewport is no
+        longer what matters. You can write rules based on the width of the
+        containing element. Container queries are a game-changer for micro
+        layouts. Your components can be self-contained, independent of the
+        browser viewport.
+      </h2>
+      <p>
+        Caution: Container queries are a new experimental technology that isn't
+        widely available in browsers. To test the code below, and see the
+        example working, enable container queries in Chrome. Go to
+        chrome://flags/, search for Container Queries, and enable the
+        #enable-container-queries flag. With the flag enabled, you can inspect
+        and debug container queries in Chrome DevTools.
+      </p>
+    </div>
+    <div>
+      <h1>Combining Queries</h1>
+      You can use media queries for the page layout, and container queries for
+      the components within the page.
+      <p></p>
+      <div class="example3">
+        <main>
+          <div class="media">
+            <div class="media-illustration">
+              <svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><circle cx="100" cy="100" r="100" fill="#5f6368" /></svg>
+            </div>
+            <div class="media-content">
+              <h3>Media Object</h3>
+              <p>This is a media object. There’s an image and also some content.</p>
+              <p>In this case, the content is a heading followed by two paragraphs of text.</p>
+              <p>This particular media object is inside the main content.</p>
+            </div>
+          </div>
+        </main>
+        <aside>
+          <div class="media">
+            <div class="media-illustration">
+              <svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><circle cx="100" cy="100" r="100" fill="#5f6368" /></svg>
+            </div>
+            <div class="media-content">
+              <h3>Media Object</h3>
+              <p>This is a media object. There’s an image and also some content.</p>
+              <p>In this case, the content is a heading followed by two paragraphs of text.</p>
+              <p>This particular media object is in the sidebar.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
   </body>
 </html>

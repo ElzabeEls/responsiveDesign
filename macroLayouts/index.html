@@ -18,18 +18,235 @@
   </head>
   <body>
     <div class="nav">
-      <p class="heading">MACRO LAYOUTS</p>
+      <p class="heading">
+        <a
+          href="https://web.dev/learn/design/macro-layouts?continue=https%3A%2F%2Fweb.dev%2Flearn%2Fdesign%23article-https%3A%2F%2Fweb.dev%2Flearn%2Fdesign%2Fmacro-layouts"
+          >MACRO LAYOUTS</a
+        >
+      </p>
       <a href="../"> ⬅️ Back</a>
     </div>
-    <header></header>
-    <div class="container">
-      <main>
-        <h1>Know your code</h1>
-        <p>Use our service to ensure that your coding is the best it can be.</p>
+    <div>
+      <h1>Grid</h1>
+      <div class="example1">
+        <header>My Website</header>
+        <main>
+          <article>
+            <h1>My web page</h1>
+            <p>
+              This is my web page. There are many like it but this one is mine.
+            </p>
+            <p>
+              I’m using the HyperText Markup Language (<dfn>HTML</dfn>) to give
+              structure to this page.
+            </p>
+            <p>
+              For example, this text is inside a paragraph which is inside an
+              article which is inside the main content.
+            </p>
+            <p>
+              For the tangential information that follows, I’m using the
+              <code>aside</code> element.
+            </p>
+          </article>
+          <aside>
+            <h2>History</h2>
+            <p>
+              Did you know that
+              <a href="http://info.cern.ch/hypertext/WWW/TheProject.html"
+                >the first web page ever made</a
+              >
+              is still online at its original URL?
+            </p>
+            <p>
+              The page was created by Tim Berners-Lee in the early 90s and it
+              still works in a modern web browser.
+            </p>
+          </aside>
+        </main>
+        <footer>
+          <small>I made this!</small>
+        </footer>
+      </div>
+      <div>
+        <h1>Flexbox</h1>
+        <div class="example2">
+          <header>My Website</header>
+          <main>
+            <article>
+              <h1>My web page</h1>
+              <p>
+                This is my web page. There are many like it but this one is
+                mine.
+              </p>
+              <p>
+                I’m using the HyperText Markup Language (<dfn>HTML</dfn>) to
+                give structure to this page.
+              </p>
+              <p>
+                For example, this text is inside a paragraph which is inside an
+                article which is inside the main content.
+              </p>
+              <p>
+                For the tangential information that follows, I’m using the
+                <code>aside</code> element.
+              </p>
+            </article>
+            <aside>
+              <h2>History</h2>
+              <p>
+                Did you know that
+                <a href="http://info.cern.ch/hypertext/WWW/TheProject.html"
+                  >the first web page ever made</a
+                >
+                is still online at its original URL?
+              </p>
+              <p>
+                The page was created by Tim Berners-Lee in the early 90s and it
+                still works in a modern web browser.
+              </p>
+            </aside>
+          </main>
+          <footer>
+            <small>I made this!</small>
+          </footer>
+        </div>
+        <div>
+          <h1>Do you need a media query?</h1>
+          <p>You can apply rules so that the cards themselves automatically take up the right amount of space.</p>
+          <div class="example3">
+            <header>My Website</header>
+            <main>
+              <h1>Cards</h1>
+              <div class="cards">
+                <article class="card">
+                  <h2>A card</h2>
+                  <p>
+                    This is a card. There are many like it but this one is mine.
+                  </p>
+                  <p>
+                    A card might have all sorts of content inside it. This one
+                    happens to have two paragraphs of text.
+                  </p>
+                </article>
+                <article class="card">
+                  <h2>A card</h2>
+                  <p>
+                    This is a card. There are many like it but this one is mine.
+                  </p>
+                  <p>
+                    A card might have all sorts of content inside it. This one
+                    happens to have two paragraphs of text.
+                  </p>
+                  <p>
+                    Actually, that’s not true. This particular card has three
+                    paragraphs.
+                  </p>
+                </article>
+                <article class="card">
+                  <h2>A card</h2>
+                  <p>
+                    This is a card. There are many like it but this one is mine.
+                  </p>
+                  <p>
+                    A card might have all sorts of content inside it. This one
+                    happens to have two paragraphs of text.
+                  </p>
+                </article>
+                <article class="card">
+                  <h2>A card</h2>
+                  <p>
+                    This is a card. There are many like it but this one is mine.
+                  </p>
+                  <p>
+                    A card might have all sorts of content inside it. This one
+                    happens to have two paragraphs of text.
+                  </p>
+                </article>
+                <article class="card">
+                  <h2>A card</h2>
+                  <p>
+                    This is a card. There are many like it but this one is mine.
+                  </p>
+                  <p>
+                    A card might have all sorts of content inside it. This one
+                    happens to have two, no three, paragraphs of text.
+                  </p>
+                  <p>
+                    Notice how all the cards in a row automatically have the
+                    same height?
+                  </p>
+                </article>
+                <article class="card">
+                  <h2>A card</h2>
+                  <p>
+                    This is a card. There are many like it but this one is mine.
+                  </p>
+                  <p>
+                    A card might have all sorts of content inside it. This one
+                    happens to have two paragraphs of text.
+                  </p>
+                </article>
+              </div>
+            </main>
+            <footer>
+              <small>I made this!</small>
+            </footer>
+          </div>
+          <p>You can achieve a similar layout with flexbox. In this case, if there are not enough cards to fill the final row, the remaining cards will stretch to fill the available space rather than lining up in columns.</p>
+          <div class="example4">
+            <body>
+              <header>
+                My Website
+              </header>
+              <main>
+                <h1>Cards</h1>
+                <div class="cards">
+                  <article class="card">
+                    <h2>A card</h2>
+                    <p>This is a card. There are many like it but this one is mine.</p>
+                    <p>A card might have all sorts of content inside it. This one happens to have two paragraphs of text.</p>
+                  </article>
+                  <article class="card">
+                    <h2>A card</h2>
+                    <p>This is a card. There are many like it but this one is mine.</p>
+                    <p>A card might have all sorts of content inside it. This one happens to have two paragraphs of text.</p>
+                    <p>Actually, that’s not true. This particular card has three paragraphs.</p>
+                  </article>
+                  <article class="card">
+                    <h2>A card</h2>
+                    <p>This is a card. There are many like it but this one is mine.</p>
+                    <p>A card might have all sorts of content inside it. This one happens to have two paragraphs of text.</p>
+                  </article>
+                  <article class="card">
+                    <h2>A card</h2>
+                    <p>This is a card. There are many like it but this one is mine.</p>
+                    <p>A card might have all sorts of content inside it. This one happens to have two paragraphs of text.</p>
+                  </article>
+                  <article class="card">
+                    <h2>A card</h2>
+                    <p>This is a card. There are many like it but this one is mine.</p>
+                    <p>A card might have all sorts of content inside it. This one happens to have two, no three, paragraphs of text.</p>
+                    <p>Notice how all the cards in a row automatically have the same height?</p>
+                  </article>
+                  <article class="card">
+                    <h2>A card</h2>
+                    <p>This is a card. There are many like it but this one is mine.</p>
+                    <p>A card might have all sorts of content inside it. This one happens to have two paragraphs of text.</p>
+                  </article>
+                </div>
+              </main>
+              <footer>
+                <small>I made this!</small>
+              </footer>
+            </body>
+          </div>
+          <p>If you want to line up rows and columns, then use grid.
 
-        <a href="#">Start coding</a>
-      </main>
+
+          </p>
+        </div>
+      </div>
     </div>
-    <footer></footer>
   </body>
 </html>
