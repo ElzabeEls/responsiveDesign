@@ -1,63 +1,145 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat:400,700|Seymour+One&display=swap');
+/* Example 1 */
 
-html, body {
-    margin: 0;
-    padding: 0;
-}
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat:400,700|Seymour+One&display=swap");
 
-.container {
-    width: 95%;
-    margin: 0 auto;
-}
-h1, p {
-    font-size: 1em;
-}
-h1 {
-    margin: 2em 0 -.2em;
-    font-family: 'Seymour One', sans-serif;
-}
-section {
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    grid-gap: 1em;
-    margin-top: 2em;
-}
-.card {
-    background-color: #eeeeee;
-    padding: 1.7em;
-}
-blockquote {
-    margin: 0;
-}
-span {
-    width: 70px;
-    height: 70px;
-    display: block;
-    background: gray;
-    border-radius: 50%;
-    margin: 0 auto;
-}
-cite {
-    font-style: normal;
-    font-family: 'Amatic SC', cursive;
-    font-size: 1.4em;
+.example1 {
+  margin: 0;
+  padding: 0;
 }
 
-
-h1, p, blockquote p, cite {
-    font-family: 'Montserrat';
+.example1 .container {
+  width: 95%;
+  margin: 0 auto;
 }
 
-h1 {
-    font-size: 2em;
+.example1 h1,
+.example1 p {
+  font-size: 1em;
+}
+.example1 h1 {
+  margin: 2em 0 -0.2em;
+  font-family: "Seymour One", sans-serif;
+}
+.example1 section {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 1em;
+  margin-top: 2em;
+}
+.example1 .card {
+  background-color: #eeeeee;
+  padding: 1.7em;
+}
+.example1 blockquote {
+  margin: 0;
+}
+.example1 span {
+  width: 70px;
+  height: 70px;
+  display: block;
+  background: gray;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.example1 cite {
+  font-style: normal;
+  font-family: "Amatic SC", cursive;
+  font-size: 1.4em;
 }
 
-blockquote p {
-    line-height: 1.5em;
+.example1 h1,
+.example1 p,
+.example1 blockquote p,
+.example1 cite {
+  font-family: "Montserrat";
 }
 
-cite {
-    font-size: .7em;
-    font-weight: bold;
-    color: #373737;
+.example1 h1 {
+  font-size: 2em;
+}
+
+.example1 blockquote p {
+  line-height: 1.5em;
+}
+
+.example1 cite {
+  font-size: 0.7em;
+  font-weight: bold;
+  color: #373737;
+}
+
+/* Example 2 */
+
+:root {
+  --color-primary: #3740ff;
+  --color-primary-dark: #272eb5;
+  --color-primary-light: #3740ff;
+  --color-primary-x-light: #e8f0fe;
+  --color-light: #ffffff;
+  --color-dark: #202124;
+  --color-off-white: #f3f4f4;
+  --color-mid: #5f6368;
+  --color-mid-dark: #3c4043;
+  --color-stroke: #dadce0;
+  --metric-gutter: 1.5rem;
+  --metric-box-spacing: 1rem;
+  --metric-radius: 3px;
+  --generic-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3),
+    0px 2px 6px 2px rgba(60, 64, 67, 0.15);
+  --font-mono: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+.example2 {
+  margin: 0 var(--metric-box-spacing);
+  background-color: #f1ecec;
+}
+:is(h1, h2, h3, p, li, article) {
+  max-inline-size: initial;
+  margin-block-start: var(--metric-box-spacing);
+}
+@media (min-width: 30em) {
+  .example2 {
+    font-size: 125%;
+  }
+}
+@media (min-width: 40em) {
+  .example2 {
+    font-size: 150%;
+  }
+}
+@media (min-width: 50em) {
+  .example2 {
+    font-size: 175%;
+  }
+}
+@media (min-width: 60em) {
+  .example2 {
+    font-size: 200%;
+  }
+}
+
+/* Example 3 */
+.example3 {
+  font-size: calc(0.75rem + 1.5vw);
+  background-color: #f1ecec;
+}
+.example3 {
+  margin: 0 var(--metric-box-spacing);
+}
+:is(h1, h2, h3, p, li, article) {
+  max-inline-size: initial;
+  margin-block-start: var(--metric-box-spacing);
+}
+
+/* Example 4 */
+.example4 {
+  font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+  background-color: #f1ecec;
+}
+.example4 {
+  margin: 0 var(--metric-box-spacing);
+}
+:is(h1, h2, h3, p, li, article) {
+  max-inline-size: initial;
+  margin-block-start: var(--metric-box-spacing);
 }

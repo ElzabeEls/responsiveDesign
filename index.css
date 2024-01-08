@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 
+.heading {
+    font-size: 2.5em;
+    color: #443f3f;
+    margin: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
 .main {
   margin: 0;
   padding: 60px;
@@ -8,15 +16,29 @@
   font-family: "Montserrat";
 }
 
+.main h1 {
+    padding-left: 60px;
+    color: #443f3f;
+    font-size: 1.2em;
+  }
+
+  .main h2 {
+    color: #545454;
+    font-size: 1.2em;
+  }
+
+  .main h3 {
+    color: #545454;
+    font-size: 1em;
+  }
+
 .main li,
 .main h1 {
   padding-left: 60px;
-  color: #443f3f;
-  font-size: 1.7em;
 }
 
-.main h3 {
-  color: #545454;
+.main li {
+  font-size: 1.2em;
 }
 
 .main a,
@@ -31,15 +53,7 @@
 }
 
 .section {
-  padding-top: 30px;
-}
-
-.heading {
-  font-size: 3em;
-  color: #443f3f;
-  margin: 0;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-top: 10px;
 }
 
 .nav {
