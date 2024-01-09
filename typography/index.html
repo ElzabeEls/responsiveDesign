@@ -282,7 +282,12 @@
       <ul>
         <li>Typically only use 2 different fonts</li>
         <li>keep visual hierarchy in mind: text size, bold</li>
-        <li><a href="https://www.freecodecamp.org/news/absolute-and-relative-css-units/#:~:text=What%20are%20Relative%20Units%3F,unit%20value%20will%20also%20change.">Relative Units Explanation</a></li>
+        <li>
+          <a
+            href="https://www.freecodecamp.org/news/absolute-and-relative-css-units/#:~:text=What%20are%20Relative%20Units%3F,unit%20value%20will%20also%20change."
+            >Relative Units Explanation</a
+          >
+        </li>
         <li>can use media queries to change font-size</li>
         <li>
           a more responsive option is using viewport width: font-size:
@@ -293,10 +298,84 @@
           clamping text size keeps text within a size range: font-size:
           clamp(1rem, 0.75rem + 1.5vw, 2rem);
         </li>
-        <li>can use max-inline-size to limit how wide a container can be. Prevents text from getting too wide. - use a relative unit: max-inline-size: 700px;</li>
+        <li>
+          can use max-inline-size to limit how wide a container can be. Prevents
+          text from getting too wide. - use a relative unit: max-inline-size:
+          700px;
+        </li>
         <li>Shorter lines of text can have larger line-height values.</li>
-        <li>Use unitless values for your line-height declarations. This ensures that the line height is relative to the font-size: line-height: 1.5;</li>
-        <li>Use @font-face to tell browsers where to find your web font files.</li>
+        <li>
+          Use unitless values for your line-height declarations. This ensures
+          that the line height is relative to the font-size: line-height: 1.5;
+        </li>
+
+        <li>
+          Remember to prioritize hierarchy.
+          <a
+            href="https://material.io/design/typography/the-type-system.html#type-scale"
+            >a typography scale built into your design system</a
+          >
+          can help with this
+        </li>
+        <li>
+          Use @font-face to tell browsers where to find your web font files.
+        </li>
+        <li>
+          use woff2 as your web font format. It's well supported and has the
+          best performance gains.<br />
+          <code>
+            font-family: Roboto; src: url('/fonts/roboto-regular.woff2')<br />
+            format('woff2');</code
+          >
+        </li>
+        <li>
+          To request asap font loading add a link element to the head of the
+          document
+          <ul>
+            <li>
+              A rel attribute with a value of preload tells the browser to
+              prioritize that file.
+            </li>
+            <li>
+              An as attribute with a value of font tells the browser what kind
+              of file this is.
+            </li>
+            <li>The type attribute allows you to be even more specific.</li>
+            <li>
+              You need to include the crossorigin attribute even if you are
+              hosting the font files yourself.
+            </li>
+            <li>
+              <code>
+                &lt;link href="/fonts/roboto-regular.woff2" type="font/woff2"
+                rel="preload" as="font" crossorigin /&gt;
+              </code>
+            </li>
+          </ul>
+        </li>
+        <li>
+          Use a font-display value of swap if you still want the web font to
+          replace the system font whenever the web font finally loads. - I would
+          argue just showing a loading spinner until the web font loads is best.
+        </li>
+        <li>
+          If you're using lots of different weights, a variable font could give
+          you a big performance gain.
+        </li>
+        <li>
+          <a href="https://web.dev/articles/variable-fonts"
+            >Link to Variable Fonts</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://web.dev/articles/more-variable-font-options-in-chromium-83"
+            >If you're styling elements using the system-ui value for font-face
+            property, you might get all the benefits of variable fonts without
+            downloading any font files</a
+          >
+        </li>
+        <li>The Looks and Loading time are both imporant</li>
       </ul>
     </div>
   </body>
