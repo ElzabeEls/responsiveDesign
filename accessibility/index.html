@@ -13,20 +13,6 @@
       <a href="../"> ⬅️ Back</a>
     </div>
     <div>
-      <header></header>
-      <div class="container">
-        <main>
-          <h1>Know your code</h1>
-          <p>
-            Use our service to ensure that your coding is the best it can be.
-          </p>
-
-          <a href="#">Start coding</a>
-        </main>
-      </div>
-      <footer></footer>
-    </div>
-    <div>
       <h1>Key Takeaways</h1>
       <ul>
         <li>
@@ -38,22 +24,110 @@
         <li>
           <h2>Accessibility Evaluation Tools</h2>
           <ul>
-            <li><a href="https://wave.webaim.org/">WAVE Web Accessibility Evaluation Tool</a></li>
-            <li><a href="https://www.accessibilitychecker.org/#:~:text=The%20accessibility%20checker%20auditing%20tool,countries%20only)%20standards%20and%20legislations.">Accessibility Checker by ADA Checker</a></li>
-            <li><a href="https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?pli=1">Lighthouse for Chrome</a></li>
-            <li><a href="https://chromewebstore.google.com/detail/siteimprove-accessibility/djcglbmbegflehmbfleechkjhmedcopn">Siteimprove Accessibility Checker Extension</a></li>
+            <li>
+              <a href="https://wave.webaim.org/"
+                >WAVE Web Accessibility Evaluation Tool</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.accessibilitychecker.org/#:~:text=The%20accessibility%20checker%20auditing%20tool,countries%20only)%20standards%20and%20legislations."
+                >Accessibility Checker by ADA Checker</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?pli=1"
+                >Lighthouse for Chrome</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://chromewebstore.google.com/detail/siteimprove-accessibility/djcglbmbegflehmbfleechkjhmedcopn"
+                >Siteimprove Accessibility Checker Extension</a
+              >
+            </li>
             <li><a href="https://www.nvaccess.org/download/">NVDA</a></li>
           </ul>
         </li>
-        
-          <li>Font Choice: Generally not more than 2 fonts</li>
-          <li>Visual Hierarchy</li>
-          <li>Font size (scale)</li>
-          <li>Alignment</li>
-          <li>Letter spacing & line height</li>
-          <li>Font styles (weight, italics, ect..)</li>
-          <li>Color & Contrast</li>
-      
+
+        <li>Font Choice: Generally not more than 2 fonts</li>
+        <li>Visual Hierarchy</li>
+        <li>Font size (scale)</li>
+        <li>Alignment</li>
+        <li>Letter spacing & line height</li>
+        <li>Font styles (weight, italics, ect..)</li>
+        <li>Color & Contrast</li>
+      </ul>
+      <ul>
+        <li>
+          Colour vision deficiency:
+          <a
+            href="https://developer.mozilla.org/docs/Tools/Accessibility_inspector/Simulation"
+            >Firefox's Accessibility tab</a
+          >
+          <a
+            href="https://developer.chrome.com/blog/new-in-devtools-83/#vision-deficiencies"
+            >Chrome DevTools, the rendering tab</a
+          >
+        </li>
+        <li>use styling indicators such as bold for links</li>
+        <li>
+          More tools to text accessibility
+          <ul>
+            <li><a href="https://khan.github.io/tota11y/">tota11y</a></li>
+            <li><a href="VisBug"></a>VisBug</li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/docs/Tools/Accessibility_inspector"
+                >FireFox's Accessibility Inspector</a
+              >
+            </li>
+            <li>
+              <a href="https://developers.google.com/codelabs/devtools-cvd"
+                >Chrome DevTools</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/color-picker"
+                >Color Picker</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>always declare color and background-color together in your CSS.</li>
+        <li>
+          Can detect if someone has enabled high contrast mode. The
+          prefers-contrast media feature can be queried for three values:
+          no-preference, less, and more. use this to adjust site's color
+          palette.
+        </li>
+        <li>
+          Someone visiting your website on a desktop computer with their font
+          size bumped up to 400% should get the same layout as someone visiting
+          your site on a small-screen device. Use relative units for font size
+        </li>
+        <li>
+          Use the :focus-visible pseudo-class to style your links for just
+          keyboard navigation.
+        </li>
+        <li>
+          Accessibility panel of the Firefox browser's developer tools there's
+          an option to Show Tabbing Order
+        </li>
+        <li>
+          use <code>prefers-reduced-motion</code> to for the option of less
+          motion
+        </li>
+        <li>use headings for the sake of screen readers</li>
+        <li>
+          Use landmark elements like <code>&lt;main&gt;</code>,
+          <code>&lt;nav&gt;</code>, <code>&lt;aside&gt;</code>,
+          <code>&lt;header&gt;</code>, and <code>&lt;footer&gt;</code>
+        </li>
+        <li>ARIA stands for Accessible Rich Internet Applications. Its vocabulary allows you to provide semantic information when there isn't a suitable HTML element available.</li>
+        <li><a href="https://developer.mozilla.org/docs/Learn/Accessibility/WAI-ARIA_basics">familiarize yourself with ARIA</a></li>
       </ul>
     </div>
   </body>

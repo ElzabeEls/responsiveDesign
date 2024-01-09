@@ -30,37 +30,19 @@
       <h1>Key Takeaways</h1>
       <ul>
         <li>
-          The srcset attribute allows providing different-sized versions of the
-          same image, letting the browser choose the appropriate version.
+          The biggest difference between using a picture element and not using a
+          picture element is that a picture element commands the browser what to
+          do while not using a picture element only gives suggestions.
         </li>
         <li>
-          To change the image completely, use the picture element, which builds
-          upon the img element.
+          You can use various source tags within a picture element along with
+          srcset to for example use newer image formats if the browser is
+          capable while keeping the default .jpg image in the img tag in the
+          picture tag as a fall back.
         </li>
         <li>
-          The picture element wraps around an img element, and it won't work
-          without an img element nested inside it.
-        </li>
-        <li>
-          Like srcset, the picture element updates the src attribute in the img
-          element but provides commands instead of suggestions, giving more
-          control.
-        </li>
-        <li>
-          Inside a picture element, multiple source elements can be specified,
-          each with its own srcset attribute.
-        </li>
-        <li>
-          The browser executes the first source element it can use.
-        </li>
-        <li>
-          Example with three different images in different formats (AVIF, WebP,
-          and JPEG) demonstrates using new formats without sacrificing backward
-          compatibility.
-        </li>
-        <li>
-          The type attribute in the source element specifies the kind of image
-          format.
+          You can use various source tags along with different media queries in
+          the media attribute so use different image sizes
         </li>
       </ul>
     </div>

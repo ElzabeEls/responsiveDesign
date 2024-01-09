@@ -21,15 +21,81 @@
       <p class="heading">THEMING</p>
       <a href="../"> ⬅️ Back</a>
     </div>
-    <header></header>
-    <div class="container">
-      <main>
-        <h1>Know your code</h1>
-        <p>Use our service to ensure that your coding is the best it can be.</p>
-
-        <a href="#">Start coding</a>
-      </main>
+    <div>
+      <h1>Key Takeaway</h1>
+      <ul>
+        <li>
+          <code>&lt;meta name="theme-color" content="#00D494" /&gt;</code>
+        </li>
+        <li>You can update the value of theme-color using JavaScript.</li>
+        <li>
+          You can also specify a theme color in a
+          <a href="https://developer.mozilla.org/docs/Web/Manifest"
+            >web app manifest file</a
+          >
+          that you link in the head
+        </li>
+        <li>
+          If a visitor decides to add your website to their home screen, the
+          browser will use the information in your manifest file to display an
+          appropriate shortcut.
+        </li>
+        <li>
+          use <code>prefers-color-scheme</code> for light and dark mode:
+          <code
+            >@media (prefers-color-scheme: dark) { // Styles for a dark theme.
+            }</code
+          >
+        </li>
+        <li>
+          <code
+            >&lt;meta name="theme-color" content="#ffffff"
+            media="(prefers-color-scheme: light)" /&gt; <br />&lt;meta
+            name="theme-color" content="#000000" media="(prefers-color-scheme:
+            dark)" /&gt;<br
+          /></code>
+        </li>
+        <li>
+          <a
+            href="https://blog.tomayac.com/2019/09/21/prefers-color-scheme-in-svg-favicons-for-dark-mode-icons/"
+            >SVG favicons for dark mode icons</a
+          >.
+        </li>
+        <li>
+          CSS custom properties <br /><code
+            >html { --page-color: white; --ink-color: black; } @media
+            (prefers-color-scheme: dark) { html { --page-color: black;
+            --ink-color: white; } }</code
+          >
+        </li>
+        <li>
+          <a href="https://web.dev/articles/building/a-color-scheme"
+            >building a color scheme</a
+          >
+        </li>
+        <li>
+          use a CSS filter to dim photographic images in dark mode if you want:
+          <code> filter: brightness(.8) contrast(1.2);</code>
+        </li>
+        <li>might have to swop out images in dark mode</li>
+        <li>
+          include theme info in CSS to let the browser know not to use the
+          default color palette for form fields. Or add to the head:
+          <code
+            >&lt;meta name="supported-color-schemes" content="light
+            dark"&gt;</code
+          >
+        </li>
+        <li>
+          Use the accent-color property in CSS to style checkboxes, radio
+          buttons, and some other form fields.
+        </li>
+        <li>
+          <a href="https://web.dev/articles/accent-color#extra_more_tinting"
+            >more on tinting.</a
+          >
+        </li>
+      </ul>
     </div>
-    <footer></footer>
   </body>
 </html>
