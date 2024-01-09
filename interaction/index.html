@@ -1,12 +1,3 @@
-<!--
-  - Font Choice: Generally not more than 2 fonts
-  - Visual Hierarchy
-  - Font size (scale)
-  - Alignment
-  - Letter spacing & line height
-  - Font styles (weight, italics, ect..)
-  - Color & Contrast
--->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,15 +12,57 @@
       <p class="heading">INTERACTION</p>
       <a href="../"> ⬅️ Back</a>
     </div>
-    <header></header>
-    <div class="container">
-      <main>
-        <h1>Know your code</h1>
-        <p>Use our service to ensure that your coding is the best it can be.</p>
+    <div>
+      <h1>Key Takeaways</h1>
+      <ul>
+        <li>
+          You can test for three possible values with the pointer media feature:
+          none, coarse, and fine.
+        </li>
+        <li>
+          If a browser reports a pointer value of none the user might be using a
+          keyboard to interact with your website.
+        </li>
+        <li>
+          If a browser reports a pointer value of coarse it means the primary
+          input mechanism isn’t very accurate. A finger on a touchscreen is a
+          coarse pointer.
+        </li>
 
-        <a href="#">Start coding</a>
-      </main>
+        <li>
+          If a browser reports a pointer value of fine it means the primary
+          input mechanism is capable of fine-grained control. A mouse or stylus
+          is a fine pointer.
+        </li>
+        <li>
+          You can adjust the size of your interface elements to suit the pointer
+          value. Try visiting
+          <a href="https://gui-challenges.web.app/settings/dist/"
+            >this website</a
+          >
+          in different kinds of devices to see how the interface adapts.
+        </li>
+        <li>
+          An any-pointer value of none means that no pointing device is
+          available.
+        </li>
+        <li>
+          if you use the keyboard to tab to something you are focusing not
+          hovering.
+        </li>
+        <li>
+          any-hover will be true if any of the available input mechanisms are
+          capable of hovering over elements.
+        </li>
+        <li>
+          the type value in html inputs helps to bring up the correct virtual
+          keyboard
+        </li>
+        <li>
+          inputmode is not supported by Safari so did not include key points
+        </li>
+        <li>autocomplete="email" in an input can improve user experience</li>
+      </ul>
     </div>
-    <footer></footer>
   </body>
 </html>

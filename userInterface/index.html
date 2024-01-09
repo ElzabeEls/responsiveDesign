@@ -1,12 +1,3 @@
-<!--
-  - Font Choice: Generally not more than 2 fonts
-  - Visual Hierarchy
-  - Font size (scale)
-  - Alignment
-  - Letter spacing & line height
-  - Font styles (weight, italics, ect..)
-  - Color & Contrast
--->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,15 +12,38 @@
       <p class="heading">USER INTERFACE</p>
       <a href="../"> ⬅️ Back</a>
     </div>
-    <header></header>
-    <div class="container">
-      <main>
-        <h1>Know your code</h1>
-        <p>Use our service to ensure that your coding is the best it can be.</p>
-
-        <a href="#">Start coding</a>
-      </main>
+    <div>
+      <ul>
+        <li>the overflow pattern for nav bars</li>
+        <li>progressive disclosure</li>
+        <li>don't have unlabled icons (not sure if I agree with this)</li>
+        <li>
+          show content in a carousel for small screens, but display the same
+          content in a grid for larger screens. (Not sure if I agree with this
+          either)
+        </li>
+        <li>Use overflow-x: auto to allow horizontal swiping.</li>
+        <li>
+          The logical version of overflow-x is overflow-inline which would
+          better match with the value for scroll-snap-type.
+        </li>
+        <li>
+          The scroll-snap properties ensure that the items can be swiped in a
+          way that feels smooth. Thanks to scroll-snap-type: inline mandatory,
+          the items snap into place.
+        </li>
+        <li>
+          <code>
+            scroll-snap-type: inline mandatory; <br />
+            scroll-behavior: smooth;</code
+          >
+        </li>
+        <li>
+          You can apply the overflow pattern to tables. In this example, the
+          table is wrapped in a div with a class of table-container.
+        </li>
+        <li>Design for smaller screens first.</li>
+      </ul>
     </div>
-    <footer></footer>
   </body>
 </html>
