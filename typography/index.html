@@ -277,5 +277,27 @@
         </div>
       </div>
     </div>
+    <div>
+      <h1>Key Takeaways</h1>
+      <ul>
+        <li>Typically only use 2 different fonts</li>
+        <li>keep visual hierarchy in mind: text size, bold</li>
+        <li><a href="https://www.freecodecamp.org/news/absolute-and-relative-css-units/#:~:text=What%20are%20Relative%20Units%3F,unit%20value%20will%20also%20change.">Relative Units Explanation</a></li>
+        <li>can use media queries to change font-size</li>
+        <li>
+          a more responsive option is using viewport width: font-size:
+          calc(0.75rem + 1.5vw); - never use vw by itself. The user won't be
+          able to resize the text.
+        </li>
+        <li>
+          clamping text size keeps text within a size range: font-size:
+          clamp(1rem, 0.75rem + 1.5vw, 2rem);
+        </li>
+        <li>can use max-inline-size to limit how wide a container can be. Prevents text from getting too wide. - use a relative unit: max-inline-size: 700px;</li>
+        <li>Shorter lines of text can have larger line-height values.</li>
+        <li>Use unitless values for your line-height declarations. This ensures that the line height is relative to the font-size: line-height: 1.5;</li>
+        <li>Use @font-face to tell browsers where to find your web font files.</li>
+      </ul>
+    </div>
   </body>
 </html>
