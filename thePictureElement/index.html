@@ -1,12 +1,3 @@
-<!--
-  - Font Choice: Generally not more than 2 fonts
-  - Visual Hierarchy
-  - Font size (scale)
-  - Alignment
-  - Letter spacing & line height
-  - Font styles (weight, italics, ect..)
-  - Color & Contrast
--->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,15 +12,57 @@
       <p class="heading">The Picture Element</p>
       <a href="../"> ⬅️ Back</a>
     </div>
-    <header></header>
-    <div class="container">
-      <main>
-        <h1>Know your code</h1>
-        <p>Use our service to ensure that your coding is the best it can be.</p>
+    <div>
+      <header></header>
+      <div class="container">
+        <main>
+          <h1>Know your code</h1>
+          <p>
+            Use our service to ensure that your coding is the best it can be.
+          </p>
 
-        <a href="#">Start coding</a>
-      </main>
+          <a href="#">Start coding</a>
+        </main>
+      </div>
+      <footer></footer>
     </div>
-    <footer></footer>
+    <div>
+      <h1>Key Takeaways</h1>
+      <ul>
+        <li>
+          The srcset attribute allows providing different-sized versions of the
+          same image, letting the browser choose the appropriate version.
+        </li>
+        <li>
+          To change the image completely, use the picture element, which builds
+          upon the img element.
+        </li>
+        <li>
+          The picture element wraps around an img element, and it won't work
+          without an img element nested inside it.
+        </li>
+        <li>
+          Like srcset, the picture element updates the src attribute in the img
+          element but provides commands instead of suggestions, giving more
+          control.
+        </li>
+        <li>
+          Inside a picture element, multiple source elements can be specified,
+          each with its own srcset attribute.
+        </li>
+        <li>
+          The browser executes the first source element it can use.
+        </li>
+        <li>
+          Example with three different images in different formats (AVIF, WebP,
+          and JPEG) demonstrates using new formats without sacrificing backward
+          compatibility.
+        </li>
+        <li>
+          The type attribute in the source element specifies the kind of image
+          format.
+        </li>
+      </ul>
+    </div>
   </body>
 </html>

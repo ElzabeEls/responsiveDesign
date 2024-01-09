@@ -21,15 +21,127 @@
       <p class="heading">RESPONSIVE IMAGES</p>
       <a href="../"> ⬅️ Back</a>
     </div>
-    <header></header>
-    <div class="container">
-      <main>
-        <h1>Know your code</h1>
-        <p>Use our service to ensure that your coding is the best it can be.</p>
-
-        <a href="#">Start coding</a>
-      </main>
+    <div>
+      <h1>Key Takeaways</h1>
+      <ul>
+        <li>
+          declare that images, videos, iframes should never be rendered at a
+          size wider than their containing element using max-inline-size.
+        </li>
+        <li>
+          <code>
+            img { <br />
+            max-inline-size: 100%; <br />
+            block-size: auto; <br />
+            }
+          </code>
+        </li>
+        <li>* max-inline-size is a local property</li>
+        <li>Add a block-size value of auto to retain aspect-ratio.</li>
+        <li>
+          use object-fit: contain and the aspect-ratio properties together to
+          retain the aspect ratio and prevent stretching even if that means
+          leaving white space
+        </li>
+        <li>
+          use object-fit:cover and the aspect-ratio properties together to
+          preserve the aspect ratio and prevent stretching even if it means
+          cropping the image.
+        </li>
+        <li>
+          use object-position property to adjust the crop:
+          <code>object-position: top center; </code>
+        </li>
+        <li>
+          add width and height atributes to img tag. This tells the browser the
+          ratio and will prevent content from jumping around when image loads.
+        </li>
+        <li>
+          add <code>loading="lazy"</code> to images below the fold to only load
+          those images once user scrolls there.
+        </li>
+        <li>loading="eager" prevents default lazy load</li>
+        <li>
+          Prioritise loading of main images with
+          <code> fetchpriority="high" </code>. Only use this if image is VERY
+          important
+        </li>
+        <li>
+          <code>rel="preload"</code> fethces images added via CSS or JS ahead of
+          time.
+        </li>
+        <li>
+          using imagesrcset and imagesizes are more advanced and is not
+          supported by all browsers. Exclude href fallback when using this.
+        </li>
+        <li>
+          adding the <code>decoding="async"</code> attribute tells the browser
+          that the image can be decoded asynchronously.
+        </li>
+        <li>
+          use the sync value if the image itself is the most important piece of
+          content to prioritize: <code>decoding="sync"</code>
+        </li>
+        <li>
+          The decoding attribute influences whether the browser waits for image
+          decoding before rendering other content.
+        </li>
+        <li>
+          Setting 'sync' on important images can make the browser wait for both
+          image decoding and content rendering, displaying them together.
+        </li>
+        <li>
+          Setting 'async' can allow content to be displayed faster without
+          waiting for image decoding.
+        </li>
+        <li>
+          you can use srcset to switch between the same image of different sizes
+          so that people viewing on mobile don't download unnecessarilty large
+          images:
+          <code
+            >srcset="small-image.png 300w, medium-image.png 600w,
+            large-image.png 1200w"</code
+          >
+          You still need to have a valid src attribute, but now the browser can
+          replace its value with one of the options listed in the srcset
+          attribute.
+        </li>
+        <li>
+          must use the sizes attribute with the width descriptor. tells the
+          browser what size you expect the image to be displayed under different
+          conditions:
+          <code>
+            sizes="(min-width: 66em) 33vw, (min-width: 44em) 50vw, 100vw"</code
+          >
+        </li>
+        <li>
+          Use the density descriptor to describe the pixel density of the image
+          in relationship to the image in the src attribute:
+          <code>
+            srcset="small-image.png 1x, medium-image.png 2x, large-image.png
+            3x"</code
+          >. This keeps images looking sharp.
+        </li>
+        <li>
+          Use an empty alt attribute to convey to screen readers if an image is
+          just presentational.
+        </li>
+        <li>
+          Ideally, your presentational or decorative images shouldn't be in your
+          HTML.
+        </li>
+        <li>
+          You can specify multiple image candidates using the image-set function
+          for background-image:
+          <code>
+            background-image: image-set( small-image.png 1x, medium-image.png
+            2x, large-image.png 3x );</code
+          >
+          The browser will choose the most appropriate image for the device's
+          pixel density. .
+        </li>
+        <li></li>
+      </ul>
     </div>
-    <footer></footer>
   </body>
 </html>
